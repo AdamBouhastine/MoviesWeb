@@ -74,7 +74,7 @@ const logins = new Vue({
       }
     },
     checkInfos:function(e){
-      
+      this.errors="";
       var count = 0;
       e.preventDefault();
       while(count <= this.users.length) {
@@ -84,6 +84,7 @@ const logins = new Vue({
           }
         count++;
       }
+      this.errors = "Password and username do not match";
       
   
     },
