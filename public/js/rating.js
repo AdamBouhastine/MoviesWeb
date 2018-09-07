@@ -999,7 +999,7 @@ Vue.component('adventure',{
                               <br>
                                 <tr>
                                   <center class="Name">
-                                    <font size="+4">Avengers Inifnity War</font><br>
+                                    <font size="+4">Avengers Infinity War</font><br>
                                   </center>
                                   
                                   <center class="Realease">
