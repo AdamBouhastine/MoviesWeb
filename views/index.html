@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+    
+    <title>Movies</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-danger">
+      <div class="navbar-header">
+        <a class="navbar-brand" onclick="openPage('Home', this)">
+          Movies
+        </a>
+      </div>
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li>
+            <a id="FirstHome" onclick="openPage('Home', this)">
+              Home
+            </a>
+          </li>
+          <li>
+            <a  onclick="openPage('Action', this)">
+              Action
+            </a>
+          </li>
+          <li>
+            <a onclick="openPage('Adventure', this)">
+            Adventure 
+            </a>
+          </li>
+          <li>
+            <a  onclick="openPage('Animation',this)">
+            Animation 
+            </a>
+          </li>
+          <li>
+            <a onclick="openPage('Comedy',this)">
+              Comedy
+            </a>
+          </li>
+          <li>
+            <a  onclick="openPage('Horror', this)">
+              Horror 
+            </a>
+          </li>
+          <li>
+            <a onclick="openPage('Comments',this)">
+              Comments
+            </a>
+          </li>
+          <li>
+            <a onclick="openPage('Login',this)">
+              Login
+            </a>
+          </li>
+          <li>
+            <a onclick="openPage('Register',this)">
+              Register 
+            </a>
+          </li>
+          
+      
+        
+        </ul>
+      </div>
+    </nav>
+    <br>
+    <section class="row">
+      <div id="Home" class="tab">
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+
+          <a href="https://www.youtube.com/watch?v=B_e0EbLtgTI" class="thumbnail-danger thumbnail-shadow black"> 
+            <img src="/assets/indestructibles.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> The Incredibles 2</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=6ZfuNTqbHE8" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/avengers.jpg" alt="Indestructibles" class="img-rounded">
+            <p> The Avengers </p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=UUkn-enk2RU" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/ant_man.jpg" alt="Indestructibles" class="img-rounded">
+            <p> Ant-Man and the Wasp </p>
+          </a>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=xjDjIWPwcPU" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/black_panther.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Black Panther </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=0URpDxIjZrQ" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/christopher.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Christopher Robin </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=ZQ-YX-5bAs0" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/crazy_rich_asians.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Crazy Rich Asians </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=D86RtevtfrA" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/deadpool.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Deadpool 2 </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=8RBNHdG35WY" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/mamma_mia.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Mamma Mia </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=uIxnTi4GmCo" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/alpha.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Alpha</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=RxEPPm_LKQY" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/opening_wide.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> The Weg </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=eAKrgwCnkGM" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/the_eq_2.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> The Equalizer 2 </p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=V6wWKNij_1M" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/hereditary.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Hereditary</p>
+        </div>
+
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=WR7cc5t7tv8" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/quiet_place.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Quiet Place</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=ySy8mcceTno" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/Slenderman.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Slenderman</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=CXkUaaVrB_s" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/Spy_who_dumped_me.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Spy who dumped me</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=jSEY-y5ZByw" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/Mile_22.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Mile 22</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=7Pa_Weidt08" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/lapin.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Peter Rabbit</p>
+        </div>
+         <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=w7pYhpJaJW8" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/alita.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Alita : Battle Angel</p>
+        </div>
+         <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=t9QePUT-Yt8" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/sky.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Skyscraper</p>
+        </div>
+  
+       <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=_EzB6eTni2s" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/hotel.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Hotel Transylvania 3</p>
+        </div>
+       <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=MFWF9dU5Zc0" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/ocean.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Ocean's 8</p>
+        </div>
+         <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=xLCn88bfW1o" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/venom.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Venom</p>
+        </div>
+         
+         <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=jPEYpryMp2s" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/solo.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p>Solo : A star Wars story</p>
+        </div>
+        <div class="col-xs-4 col-sm-3 col-md-3 ">
+          <a href="https://www.youtube.com/watch?v=XiHiW4N7-bo" class="thumbnail-danger thumbnail-shadow"> 
+            <img src="/assets/misssion_impossible.jpg" alt="Indestructibles" class="img-rounded">
+          </a>
+          <p> Mission Impossible : Fallout </p>
+        </div>
+      </div>
+    </section>
+
+    <div id="content">
+      <div id="Action" class="tab">
+          <action></action>
+      </div>
+      <div id="Adventure" class="tab">
+        <adventure></adventure>
+      </div>
+      <div id="Animation" class="tab">
+        <animation></animation>
+      </div>
+      <div id="Comedy" class="tab">
+        <comedy></comedy>
+      </div>
+      <div id="Horror" class="tab">
+        <horror></horror>
+      </div>
+    </div>
+
+    <div id="login">
+    <div id="Login" class="tab">
+    <h2>
+    Login
+  </h2>
+      <span>{{errors}}</span>
+      <form @submit="checkInfos"  class="form-horizontal"  name="form" >
+    <div class="form-group">
+        <label for="User" class="col-sm-4 control-label col-sm-offset-4">Nickname</label>
+        <div class="col-sm-8">
+            <input type="text" name="mail" class="form-control" id="mail" v-model="User" placeholder="User">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword" class="col-sm-4 control-label col-sm-offset-4">Password</label>
+        <div class="col-sm-8">
+            <input type="password" name="password" class="form-control" id="password" v-model="Password" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-10 col-sm-4">
+            <button type="submit" class="btn btn-danger" value="submit ">Submit</button>
+        </div>
+    </div>
+</form>
+
+  </div>
+
+    <div id="Register" class="tab">
+     <h2>
+     Register
+    </h2>
+    <span>{{errors}}</span>
+    <form class="form-horizontal"  @submit="addSomeone" name="form" action=""  align="center">
+    <div class="form-group">
+        <label for="User" class="col-sm-4 control-label col-sm-offset-4">User</label>
+        <div class="col-sm-8">
+            <input type="name" name="mail" class="form-control" v-model="newUser" placeholder="User">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword1" class="col-sm-4 control-label col-sm-offset-4">Password</label>
+        <div class="col-sm-8">
+            <input type="password" name="password" class="form-control" v-model="newPassword" placeholder="Choose a password">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword1" class="col-sm-4 control-label col-sm-offset-4">Confirm password</label>
+        <div class="col-sm-8">
+            <input type="password" name="password_confirmed" class="form-control" v-model="newConfirmPassword" placeholder="Confirm password...">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-10 col-sm-4">
+            <button  class="btn btn-danger">Submit</button>
+        
+        </div>
+    </div>
+    </form>
+    </div>
+    
+    <div id="Comments" class="tab">
+      
+      <h2>
+         Comments Section
+      </h2>
+          
+         <div class="container-fluid">
+          <ul class="list-group">
+              <span v-for="(comment,n) in comments">
+                 <li class="list-group-item">
+                  <span class="comment">{{ comment.title }},</span>
+                  <i class="comment"> {{ comment.author }} </i>
+                   <img src="https://cdn.glitch.com/4b48a702-2443-4885-a8c1-10f8574bba5e%2Fedit.png?1536329331040" height="15" width="15"
+                        @click="editComment(n)">
+                   <img src="https://cdn.glitch.com/4b48a702-2443-4885-a8c1-10f8574bba5e%2Fred_cross.jpg?1536316699701" height="15" width="15"
+                        @click="removeComment(n)"> 
+                 </li>
+              </span>
+            <p>{{errorsComments}}</p>
+            
+          </ul>
+        <div id="comment-box">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Enter a comment..." v-model="comment" @keyup.enter="postComment">
+            <span class="input-group-btn">
+            <br>
+              <button class="btn btn-danger" type="button" @click="postComment">Submit</button>
+            </span>
+          </div>
+        </div>
+        </div>
+        
+
+        
+      </div> 
+      
+       
+       <br>
+       <br>
+       <span class="user">{{connectedUser}}</span>
+      </div>
+  
+   
+    <script src="/js/rating.js"></script>
+    <script src="/js/login.js"></script>
+    <script src="/js/tabulation.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </body>
+</html>
